@@ -41,6 +41,10 @@ jobs:
         run: |
           python3 fix_index.py
 
+      - name: Build Atlas legacy loader metadata
+        run: |
+          python3 build_atlas_loaders.py
+
       - name: Create artifact
         uses: actions/upload-pages-artifact@v3
 
