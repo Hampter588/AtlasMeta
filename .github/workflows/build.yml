@@ -7,6 +7,8 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
@@ -44,6 +46,21 @@ jobs:
       - name: Build Atlas legacy loader metadata
         run: |
           python3 build_atlas_loaders.py
+
+      - name: Publish metadata for raw.githubusercontent.com
+        working-directory: _site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          touch .nojekyll
+          git init
+          git checkout -b metadata
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "Publish Atlas metadata"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin metadata
 
       - name: Create artifact
         uses: actions/upload-pages-artifact@v3
