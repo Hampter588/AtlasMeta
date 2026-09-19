@@ -31,17 +31,29 @@ jobs:
           mv $to_move _site/v1
 
       - name: Create and move modified metabolism information
+        id: omniarchive
+        continue-on-error: true
         run: |
           cd metabolism
           bun install
           bun start build net.minecraft
           cd ..
+
+      - name: Install Omniarchive Minecraft metadata
+        if: steps.omniarchive.outcome == 'success'
+        run: |
           rm -r _site/v1/net.minecraft
           mv metabolism/run/output/net.minecraft _site/v1/
 
       - name: Fix index.json
+        if: steps.omniarchive.outcome == 'success'
         run: |
           python3 fix_index.py
+
+      - name: Report Omniarchive fallback
+        if: steps.omniarchive.outcome != 'success'
+        run: |
+          echo "::warning::Omniarchive metadata is unavailable; publishing Prism Minecraft metadata as a fallback."
 
       - name: Build Atlas legacy loader metadata
         run: |
