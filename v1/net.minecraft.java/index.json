@@ -1,0 +1,31 @@
+{
+    "formatVersion": 1,
+    "name": "Java Runtimes",
+    "uid": "net.minecraft.java",
+    "versions": [
+        {
+            "recommended": false,
+            "releaseTime": "2025-04-16T14:21:40+00:00",
+            "sha256": "d2c78f74fd2727f54f2be8e742cc371f443edc450135eb186fe75781af2f28ec",
+            "version": "java21"
+        },
+        {
+            "recommended": false,
+            "releaseTime": "2021-11-15T14:19:45+00:00",
+            "sha256": "04ccda828c2df67dcc96dacfb1148a8639a7a80f3dafc598838803d96973b57d",
+            "version": "java17"
+        },
+        {
+            "recommended": false,
+            "releaseTime": "2021-05-10T16:43:02+00:00",
+            "sha256": "bbfc67adc6d90a68d383fd324c1b189950c5ea6f8479714552be773a1c79ebc0",
+            "version": "java16"
+        },
+        {
+            "recommended": false,
+            "releaseTime": "2020-11-17T19:06:44+00:00",
+            "sha256": "b79e7221be4560cfa01279a6b0b78dbe76926ee6d5e83cf127239b446757e6ca",
+            "version": "java8"
+        }
+    ]
+}

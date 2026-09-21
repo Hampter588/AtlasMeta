@@ -1,0 +1,20 @@
+{
+  "uid": "org.babric.fabric-loader",
+  "name": "Babric Loader",
+  "formatVersion": 1,
+  "versions": [
+    {
+      "version": "0.19.5+mc.b1.7.3",
+      "type": "release",
+      "releaseTime": "1970-01-01T00:00:00.000Z",
+      "requires": [
+        {
+          "uid": "net.minecraft",
+          "equals": "b1.7.3"
+        }
+      ],
+      "recommended": true,
+      "sha256": "10862d2c68fa7d5a319e4b402891a6a56682e8bbed67ac28444ff3214f9f65f5"
+    }
+  ]
+}

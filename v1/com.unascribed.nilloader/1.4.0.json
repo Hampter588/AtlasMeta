@@ -1,0 +1,14 @@
+{
+  "uid": "com.unascribed.nilloader",
+  "name": "NilLoader",
+  "formatVersion": 1,
+  "version": "1.4.0",
+  "releaseTime": "2026-08-06T00:00:28.000Z",
+  "type": "release",
+  "+agents": [
+    {
+      "name": "com.unascribed:nilloader:1.4.0",
+      "url": "https://repo.sleeping.town"
+    }
+  ]
+}

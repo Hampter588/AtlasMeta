@@ -1,0 +1,20 @@
+{
+  "uid": "io.github.rift",
+  "name": "Rift Loader",
+  "formatVersion": 1,
+  "versions": [
+    {
+      "version": "1.0.4-106",
+      "type": "release",
+      "releaseTime": "2019-01-01T07:33:38.000Z",
+      "requires": [
+        {
+          "uid": "net.minecraft",
+          "equals": "1.13"
+        }
+      ],
+      "recommended": true,
+      "sha256": "1cc2c0339078f89518012238a0552143537c9d8869bab6d8acca64402077fb39"
+    }
+  ]
+}

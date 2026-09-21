@@ -1,0 +1,14 @@
+{
+  "uid": "com.unascribed.nilloader",
+  "name": "NilLoader",
+  "formatVersion": 1,
+  "versions": [
+    {
+      "version": "1.4.0",
+      "type": "release",
+      "releaseTime": "2026-08-06T00:00:28.000Z",
+      "recommended": true,
+      "sha256": "83b0ea553e45a8530f19f86d67a2eb53ec8b9b56fb2a842cdaff5c343a768d6e"
+    }
+  ]
+}

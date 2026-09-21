@@ -1,0 +1,20 @@
+{
+  "uid": "net.xiaoyu233.fml",
+  "name": "FishModLoader / MITE",
+  "formatVersion": 1,
+  "versions": [
+    {
+      "version": "3.4.4",
+      "type": "release",
+      "releaseTime": "2026-08-23T07:26:47.000Z",
+      "requires": [
+        {
+          "uid": "net.minecraft",
+          "equals": "1.6.4"
+        }
+      ],
+      "recommended": true,
+      "sha256": "bd4e91d54da780e34e27af16ea22694d6f79997d433f9e0ad9cb3a3345978f82"
+    }
+  ]
+}

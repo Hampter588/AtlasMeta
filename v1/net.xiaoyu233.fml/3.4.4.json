@@ -1,0 +1,22 @@
+{
+  "uid": "net.xiaoyu233.fml",
+  "name": "FishModLoader / MITE",
+  "formatVersion": 1,
+  "version": "3.4.4",
+  "releaseTime": "2026-08-23T07:26:47.000Z",
+  "type": "release",
+  "requires": [
+    {
+      "uid": "net.minecraft",
+      "equals": "1.6.4"
+    }
+  ],
+  "compatibleJavaMajors": [
+    8
+  ],
+  "mainClass": "net.xiaoyu233.fml.relaunch.client.Main",
+  "mainJar": {
+    "name": "net.xiaoyu233.fishmodloader:mite-fml:3.4.4",
+    "MMC-absoluteUrl": "https://github.com/MinecraftIsTooEasy/FishModLoader/releases/download/3.4.4/1.6.4-MITE-HDS_FMLv3.4.4.jar"
+  }
+}
